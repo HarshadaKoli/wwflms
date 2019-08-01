@@ -32,7 +32,7 @@
 <section class="content-header"> -->
 
 
-<section class="content" style="overflow-x: scroll;">
+<section class="content">
 <div class="emp-personal-info-view">
 <div class="nav-tabs-custom">
 <ul class="nav nav-tabs">

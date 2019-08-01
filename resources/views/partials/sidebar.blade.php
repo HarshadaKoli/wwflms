@@ -54,6 +54,52 @@
           </a>
         </li>
 
+        <li>
+          <a href="/bankall">
+            <i class="fa fa-th"></i> <span>Banks</span>
+<!--             <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span> -->
+          </a>
+        </li>
+
+        <li>
+          <a href="/industryall">
+            <i class="fa fa-th"></i> <span>Industry Type</span>
+<!--             <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span> -->
+          </a>
+        </li>
+
+        <li>
+          <a href="/purposeall">
+            <i class="fa fa-th"></i> <span>Purpose</span>
+<!--             <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span> -->
+          </a>
+        </li>
+
+        <li>
+          <a href="/actionall">
+            <i class="fa fa-th"></i> <span>Action</span>
+<!--             <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span> -->
+          </a>
+        </li>
+
+        <li>
+          <a href="/statusall">
+            <i class="fa fa-th"></i> <span>Status</span>
+<!--             <span class="pull-right-container">
+              <small class="label pull-right bg-green">new</small>
+            </span> -->
+          </a>
+        </li>
+
+
                <li class="treeview">
           <a href="#">
             <i class="fa fa-dashboard"></i> <span>Master</span>

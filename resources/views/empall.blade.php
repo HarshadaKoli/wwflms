@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
  <script src="https://code.jquery.com/jquery-3.3.1.js"></script> 
+<style type="text/css"> 
+
 <style type="text/css">
   .btn-success {
     color: #fff;
@@ -48,7 +50,7 @@
               </h3>
             </div>
             <!-- /.box-header -->
-            <div class="box-body" style="overflow-x: scroll;">
+            <div class="box-body">
               
               <table id="example" class="table table-striped table-bordered" style="width:100%">
                 <thead>
@@ -78,6 +80,7 @@
 <th>Upload Pan</th>
 <th>Upload Resume</th>
 <th>Designation</th>
+<th>Actions</th>
 
 
 
@@ -139,7 +142,7 @@
     <!-- /.content -->
   </div>
 
-<script>
+<script type="text/javascript">
 $(document).ready(function() {
    $('#example').DataTable( {
         "scrollX": true
@@ -147,5 +150,11 @@ $(document).ready(function() {
 } );
 </script>
 
+<!-- <script>
+$(document).ready( function () {
+    $('#example').DataTable();
+} );
+</script>
+ -->
 @endsection
 
