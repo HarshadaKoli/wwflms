@@ -37,7 +37,7 @@
 <ul class="nav nav-tabs">
 <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true" id="tb1"><h5>Basic Details</h5></a></li>
 <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false" id="tb2"><h5>Rating</h5></a></li>
-</ul>
+
 <div class="tab-content">
 <div class="tab-pane active" id="tab_1">
 
@@ -46,39 +46,39 @@
   <form class="form-horizontal" action="{{ URL::to('/updateclient')}}" method="POST" autocomplete="off" enctype="multipart/form-data">
  {{ csrf_field() }}
 
- <!-- <div class="form-group" style="margin-left: 11px;"> 
+<div class="form-group" style="margin-left: 11px;">
 <label>Id</label><r style="color: red">*</r>
-<input type="text" class="form-control" value="{{$client->id}}" name="id" style="width: 300px;">
-<br></div>  -->
+<input type="text" class="form-control" value="{{$client->id}}" name="id" style="width: 300px;" disabled="true">
+<br></div>
 
 <div class="form-group" style="margin-left: 11px;">
 <label>Company name</label><r style="color: red">*</r>
-<input type="text" class="form-control" value="{{$client->cname}}" name="cname" placeholder="Cname" style="width: 300px;">
+<input type="text" class="form-control" value="{{$client->cname}}" name="cname" placeholder="Cname" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group" style="margin-left: 11px;">
 <label>Address</label><r style="color: red">*</r>
- <input type="text" class="form-control" name="address" placeholder="Address" value="{{$client->address}}" style="width: 300px;">
+ <input type="text" class="form-control" name="address" placeholder="Address" value="{{$client->address}}" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group" style="margin-left: 11px;">
 <label>Constitution</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="constitution" placeholder="Constitution" value="{{$client->constitution}}" style="width: 300px;">
+<input type="text" class="form-control" name="constitution" placeholder="Constitution" value="{{$client->constitution}}" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group" style="margin-left: 11px;">
 <label>City</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="city" placeholder="City" value="{{$client->city}}" style="width: 300px;">
+<input type="text" class="form-control" name="city" placeholder="City" value="{{$client->city}}" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group" style="margin-left: 11px;">
 <label>Contperson</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="contperson" placeholder="Contperson" value="{{$client->contperson}}" style="width: 300px;">
+<input type="text" class="form-control" name="contperson" placeholder="Contperson" value="{{$client->contperson}}" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group" style="margin-left: 11px;">
 <label>Email</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="email" placeholder="Email" value="{{$client->email}}" style="width: 300px;">
+<input type="text" class="form-control" name="email" placeholder="Email" value="{{$client->email}}" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group" style="margin-left: 11px;">
@@ -101,49 +101,44 @@
 <div class="box-body">
      <div class="form-group">
 <label>Industrytype</label>
-<input type="text" class="form-control" name="industrytype" placeholder="Industrytype" value="{{$client->industrytype}}" style="width: 300px;">
+<input type="text" class="form-control" name="industrytype" placeholder="Industrytype" value="{{$client->industrytype}}" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group">
 <label>Purpose</label>
-<input type="text" class="form-control" name="purpose" placeholder="Purpose"  value="{{$client->purpose}}" style="width: 300px;">
+<input type="text" class="form-control" name="purpose" placeholder="Purpose"  value="{{$client->purpose}}" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group">
 <label>Status</label>
-<input type="text" class="form-control" name="status" placeholder="Status" value="{{$client->status}}" style="width: 300px;">
+<input type="text" class="form-control" name="status" placeholder="Status" value="{{$client->status}}" style="width: 300px;" disabled="true">
 <br></div>
 
 
 <div class="form-group">
  <label>Bank</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="bank" placeholder="Bank" value="{{$client->bank}}" style="width: 300px;">
+<input type="text" class="form-control" name="bank" placeholder="Bank" value="{{$client->bank}}" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group">
 <label>Total exposure(Bank Limit)</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="texposure" placeholder="Texposure" value="{{$client->texposure}}" style="width: 300px;">
+<input type="text" class="form-control" name="texposure" placeholder="Texposure" value="{{$client->texposure}}" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group">
 <label>Rated Exposure</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="Ratedexpo" placeholder="Ratedexpo" value="{{$client->Ratedexpo}}" style="width: 300px;">
+<input type="text" class="form-control" name="Ratedexpo" placeholder="Ratedexpo" value="{{$client->Ratedexpo}}" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group">
 <label>Rating History</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="ratinghist" placeholder="Ratinghist" value="{{$client->ratinghist}}" style="width: 300px;">
+<input type="text" class="form-control" name="ratinghist" placeholder="Ratinghist" value="{{$client->ratinghist}}" style="width: 300px;" disabled="true">
 <br></div>
 
 <div class="form-group">
  <label>Nextfolloup</label><r style="color: red">*</r>
-<input type="text" class="form-control" name="nextfolloup" placeholder="Nextfolloup" value="{{$client->nextfolloup}}" style="width: 300px;">
+<input type="text" class="form-control" name="nextfolloup" placeholder="Nextfolloup" value="{{$client->nextfolloup}}" style="width: 300px;" disabled="true">
 <br></div><br>
-
-<div class="form-group col-lg-3" style="padding-top: 18px">
-<a href=""><input type='submit' class="btn btn-success" name='Submit' value="Submit"></a>
-<br>
-</div>
 
  
 
